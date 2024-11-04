@@ -37,6 +37,33 @@ About Page Mobile:
 
 ![image](https://github.com/user-attachments/assets/47ea4a5b-8f4d-4fce-bbfc-90c4319b644a)
 
+Contact Page Desktop:
+
+![image](https://github.com/user-attachments/assets/51c06340-9cfc-4d7d-b1aa-113bb547a282)
+
+Contact Page Mobile:
+
+![image](https://github.com/user-attachments/assets/e8354c1e-22b3-494d-91c6-b9ec2bb86395)
+
+
+Cart Page Desktop:
+
+![image](https://github.com/user-attachments/assets/f5d44e77-b83d-4bc9-9f41-046a3ae56d2e)
+
+
+Cart Page Mobile:
+
+![image](https://github.com/user-attachments/assets/1c856ffb-5633-43ec-838e-78fb3fa255ee)
+
+
+Checkout Page Desktop:
+
+![image](https://github.com/user-attachments/assets/93c9a108-a0a7-46f9-abbd-30dd4fe4f493)
+
+Checkout Page Mobile:
+
+![image](https://github.com/user-attachments/assets/4ecff6fc-92ef-4e14-ac96-f0c3326d3bff)
+
 
 2. Edge:
 
@@ -66,7 +93,47 @@ About Page Mobile:
 
 ![image](https://github.com/user-attachments/assets/47ea4a5b-8f4d-4fce-bbfc-90c4319b644a)
 
-3. 
+3. Opera
+
+Home Page Desktop:
+
+![image](https://github.com/user-attachments/assets/469a6db9-0523-44d4-8c37-3461d5a36f26)
+
+Store Page Desktop:
+
+![image](https://github.com/user-attachments/assets/5a4c8a62-8ba3-4ca7-b3cc-d994ec7be76c)
+
+About Page Desktop:
+
+![image](https://github.com/user-attachments/assets/ac284964-29b1-4920-920e-d19207193851)
+
+Contact Page Desktop:
+
+![image](https://github.com/user-attachments/assets/8fcb1e71-2d38-413b-ab67-8ff17ed60ffb)
+
+Contact Page Mobile:
+
+![image](https://github.com/user-attachments/assets/e8354c1e-22b3-494d-91c6-b9ec2bb86395)
+
+Cart Page Desktop:
+
+![image](https://github.com/user-attachments/assets/de4f51f3-00fc-488a-9126-d30b50feda27)
+
+Cart Page Mobile:
+
+![image](https://github.com/user-attachments/assets/1c856ffb-5633-43ec-838e-78fb3fa255ee)
+
+Checkout Page Desktop:
+
+![image](https://github.com/user-attachments/assets/51939c01-c514-433c-b916-05c2bdb9f132)
+
+Checkout Page Mobile:
+
+![image](https://github.com/user-attachments/assets/4ecff6fc-92ef-4e14-ac96-f0c3326d3bff)
+
+
+
+   
  
 
 
