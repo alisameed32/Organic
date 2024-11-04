@@ -93,6 +93,34 @@ About Page Mobile:
 
 ![image](https://github.com/user-attachments/assets/47ea4a5b-8f4d-4fce-bbfc-90c4319b644a)
 
+Contact Page Desktop:
+
+![image](https://github.com/user-attachments/assets/16f356da-07e1-4120-88e4-bd07e909a81d)
+
+Contact Page Mobile:
+
+![image](https://github.com/user-attachments/assets/e8354c1e-22b3-494d-91c6-b9ec2bb86395)
+
+
+Cart Page Desktop:
+
+![image](https://github.com/user-attachments/assets/b0ce6964-949e-442e-9bf2-e7ba946b9b5b)
+
+Cart Page Mobile:
+
+![image](https://github.com/user-attachments/assets/1c856ffb-5633-43ec-838e-78fb3fa255ee)
+
+
+Checkout Page Desktop:
+
+![image](https://github.com/user-attachments/assets/e078d732-51a0-443d-80ff-ffcfb522136a)
+
+Checkout Page Mobile:
+
+![image](https://github.com/user-attachments/assets/4ecff6fc-92ef-4e14-ac96-f0c3326d3bff)
+
+
+
 3. Opera
 
 Home Page Desktop:
