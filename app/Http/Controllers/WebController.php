@@ -34,4 +34,8 @@ class WebController extends Controller
     }
 
 
+    public function productdetail(){
+        return view('web.productdetail');
+    }
+    
 }

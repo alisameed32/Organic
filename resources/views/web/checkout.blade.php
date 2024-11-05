@@ -1,19 +1,6 @@
 <x-web-layout>
 
-<style>
-        h2,
-        h4 {
-            color: #333;
-        }
 
-        button {
-            transition: background-color 0.3s, border-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
 
 <div class="container my-5">
         <h2 class="text-center mb-4">Checkout</h2>

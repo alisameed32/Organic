@@ -65,7 +65,7 @@
                             <option value="3">Cash on Delivery</option>
                         </select>
                     </div>
-                    <a href="checkout"><button class="btn btn-primary w-100 mt-3">Proceed to Checkout</button></a>
+                    <a href="{{ route('checkout') }}"><button class="btn btn-primary w-100 mt-3">Proceed to Checkout</button></a>
                 </div>
             </div>
         </div>

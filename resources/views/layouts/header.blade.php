@@ -21,7 +21,7 @@
 
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="/">Organic</a>
+            <a class="navbar-brand" href="{{ route('home') }}">Organic</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,21 +29,21 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav m-auto my-2 my-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="store">Store</a>
+                        <a class="nav-link" href="{{ route('store') }}">Store</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about">
+                        <a class="nav-link" href="{{ route('about') }}">
                             About
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact">Contact</a>
+                        <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-item" href="cart">
+                        <a class="nav-item" href="{{ route('cart') }}">
                             <img src="{{ asset('.\build\assets\images\cart.png') }}" alt="add to cart" height="32px" width="32px">
                         </a>
                     </li>
