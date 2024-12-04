@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="container">
+    <div class="container" style="color: white">
         <h1>Add New Category</h1>
         <form action="{{ route('categories.store') }}" method="POST">
             @csrf

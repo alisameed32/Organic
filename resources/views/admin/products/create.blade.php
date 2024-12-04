@@ -1,5 +1,5 @@
 <x-app-layout>
-<div class="container">
+<div class="container" style="color: white">
     <h1>Add Product</h1>
     <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
