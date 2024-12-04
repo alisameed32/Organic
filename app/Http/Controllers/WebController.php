@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 
 class WebController extends Controller
@@ -13,7 +14,9 @@ class WebController extends Controller
 
 
     public function store(){
-        return view('web.store');
+
+        $products = Product::all();
+        return view('web.store',compact('products'));
     }
 
     public function about(){
@@ -34,8 +37,8 @@ class WebController extends Controller
     }
 
 
-    public function productdetail(){
-        return view('web.productdetail');
+    public function productdetail(Product $product){
+        return view('web.productdetail', compact('product'));
     }
     
 }
