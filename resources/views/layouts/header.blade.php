@@ -48,10 +48,77 @@
                         </a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn0" type="submit">Search</button>
-                </form>
+                
+
+
+               
+                <form class="d-flex position-relative" role="search">
+    <input 
+        class="px-2 search" 
+        id="search-bar" 
+        type="search" 
+        placeholder="Search" 
+        aria-label="Search" 
+        autocomplete="off">
+    <button class="btn0" type="button">Search</button>
+    <div id="search-results" class="dropdown-menu" style="display: none; width: 100%;"></div>
+</form>
+
+
+
+
+
+
+
+
+
+
             </div>
         </div>
     </nav>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const searchBar = document.getElementById('search-bar');
+    const searchResults = document.getElementById('search-results');
+
+    searchBar.addEventListener('input', function () {
+        const query = searchBar.value.trim();
+
+        if (query.length > 2) {
+            fetch({{ route('search') }}?query=${encodeURIComponent(query)})
+                .then(response => response.json())
+                .then(data => {
+                    let results = '';
+
+                    if (data.products.length > 0) {
+                        data.products.forEach(product => {
+                            results += `
+                                <a href="/productDetail/${product.id}" class="dropdown-item">
+                                    <img src="{{ asset('storage/') }}/${product.image}" alt="${product.name}">
+                                    <span>${product.name} - $${parseFloat(product.price).toFixed(2)}</span>
+                                </a>`;
+                        });
+                    } else {
+                        results = '<span class="dropdown-item text-muted">No results found</span>';
+                    }
+
+                    searchResults.innerHTML = results;
+                    searchResults.style.display = 'block';
+                })
+                .catch(error => {
+                    console.error('Error fetching search results:', error);
+                });
+        } else {
+            searchResults.style.display = 'none';
+        }
+    });
+
+    // Hide results when clicking outside
+    document.addEventListener('click', function (e) {
+        if (!searchBar.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.style.display = 'none';
+        }
+    });
+});
+</script>

@@ -16,7 +16,7 @@ class WebController extends Controller
     public function store(){
 
         $products = Product::all();
-        return view('web.store',compact('products'));
+        return view("web.store", compact( 'products'));
     }
 
     public function about(){
@@ -37,8 +37,25 @@ class WebController extends Controller
     }
 
 
-    public function productdetail(Product $product){
-        return view('web.productdetail', compact('product'));
+    public function productDetail(Product $product)
+    {
+        return view('web.productDetail', compact('product'));
     }
+
+    public function search(Request $request)
+{
+    $query = $request->input('query');
+
+    if (!$query) {
+        return response()->json(['products' => []]); // No query, no results
+    }
+
+    // Search products by name or description
+    $products = Product::where('name', 'like', '%' . $query . '%')
+                       ->orWhere('description', 'like', '%' . $query . '%')
+                       ->get();
+
+    return response()->json(['products' => $products]);
+}
     
 }

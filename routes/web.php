@@ -19,7 +19,9 @@ Route::get('/cart', [WebController::class,'cart'])->name('cart');
 
 Route::get('/checkout', [WebController::class,'checkout'])->name('checkout');
 
-Route::get('/productDetail{product}', [WebController::class, 'productDetail'])->name('productDetail');
+Route::get('/productDetail/{product}', [WebController::class, 'productDetail'])->name('productDetail');
+
+Route::get('/search', [WebController::class, 'search'])->name('search');
 
 
 //Route::get('/dashboard'c, function () {
