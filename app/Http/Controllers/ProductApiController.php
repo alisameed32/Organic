@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Http\Controllers\Controller;
 use App\Models\Product;
-use App\Models\Category;
 use App\Services\ProductService;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class ProductApiController extends Controller
 {
     protected $productService;
 
@@ -19,13 +20,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = $this->productService->getAllProducts();
-        return view('admin.products.index', compact('products'));
-    }
-
-    public function create()
-    {
-        $categories = Category::all();
-        return view('admin.products.create', compact('categories'));
+        return response()->json(['products' => $products], 200);
     }
 
     public function store(Request $request)
@@ -38,14 +33,13 @@ class ProductController extends Controller
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
-        $this->productService->createProduct($request->all());
-        return redirect()->route('dashboard')->with('success', 'Product created successfully!');
+        $product = $this->productService->createProduct($request->all());
+        return response()->json(['product' => $product], 201);
     }
 
-    public function edit(Product $product)
+    public function show(Product $product)
     {
-        $categories = Category::all();
-        return view('admin.products.edit', compact('product', 'categories'));
+        return response()->json(['product' => $product], 200);
     }
 
     public function update(Request $request, Product $product)
@@ -58,13 +52,13 @@ class ProductController extends Controller
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
-        $this->productService->updateProduct($product, $validated);
-        return redirect()->route('dashboard')->with('success', 'Product updated successfully!');
+        $updatedProduct = $this->productService->updateProduct($product, $validated);
+        return response()->json(['product' => $updatedProduct], 200);
     }
 
     public function destroy(Product $product)
     {
         $this->productService->deleteProduct($product);
-        return redirect()->route('dashboard')->with('success', 'Product deleted successfully!');
+        return response()->json(['message' => 'Product deleted successfully!'], 200);
     }
 }
